@@ -104,7 +104,8 @@ a {
 
 .content {
   position: relative;
-  padding: 5px 0 40px 0; }
+  padding: 5px 0 40px 0;
+  font-size: 0; }
 
 .image-box {
   position: relative;
@@ -141,7 +142,8 @@ a {
     color: #d6d6d6;
     text-align: left;
     font-size: 16px;
-    bottom: 3px;
+    left: 0;
+    bottom: 0;
     padding: 40px 15px 0px 15px;
     line-height: 20px;
     word-wrap: break-word;
@@ -160,6 +162,9 @@ a {
     .image-box:hover .image-sig {
       visibility: visible;
       opacity: 1; }
+  .image-box > a {
+    display: block;
+    position: relative; }
   .image-box img {
     width: 100%; }
   .image-box:nth-of-type(3n) {
