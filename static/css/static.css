@@ -148,7 +148,6 @@ a {
     padding: 40px 15px 0px 15px;
     line-height: 20px;
     word-wrap: break-word;
-    visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.3s linear; }
   .image-box:hover {
