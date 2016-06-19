@@ -9,47 +9,52 @@ html, body {
 a {
   text-decoration: none; }
 
-.header {
+ul.header {
   height: 75px;
-  border-bottom: 1px dashed #982207; }
-  .header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .header li {
-    display: inline-block; }
-  .header .header-logo {
+  border-bottom: 1px dashed #982207;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.header li {
+    float: left;
+    color: #982207;
+    font-size: 12px;
     text-transform: uppercase;
-    padding-left: 30px;
-    width: 15%; }
-    .header .header-logo .top {
+    padding: 0 5%;
+    height: 100%; }
+    ul.header li a {
+      color: inherit;
+      padding: 40px 0 0 0;
+      display: inline-block; }
+    ul.header li:hover {
+      color: #b6b5b3; }
+      ul.header li:hover .circle:after {
+        background-color: transparent; }
+    ul.header li.active {
+      color: #b6b5b3; }
+      ul.header li.active .circle:after {
+        background-color: transparent; }
+  ul.header .icon {
+    display: none;
+    font-size: 40px; }
+    ul.header .icon a {
+      padding: 10px; }
+  ul.header .header-logo {
+    text-transform: uppercase;
+    width: 15%;
+    min-width: 100px; }
+    ul.header .header-logo a {
+      padding: 0; }
+    ul.header .header-logo .top {
       font-size: 48px;
       font-weight: 500;
       color: #982207;
       margin-bottom: -8px; }
-    .header .header-logo .bottom {
+    ul.header .header-logo .bottom {
       font-size: 14px;
       color: #b6b5b3; }
-    .header .header-logo:hover .top {
+    ul.header .header-logo:hover .top {
       color: #b6b5b3; }
-  .header .header-menu {
-    color: #982207;
-    font-size: 12px;
-    text-transform: uppercase; }
-    .header .header-menu a {
-      color: inherit; }
-    .header .header-menu > ul {
-      padding: 40px 0 0 0; }
-    .header .header-menu li {
-      padding: 0 50px; }
-      .header .header-menu li:hover {
-        color: #b6b5b3; }
-        .header .header-menu li:hover .circle:after {
-          background-color: transparent; }
-      .header .header-menu li.active {
-        color: #b6b5b3; }
-        .header .header-menu li.active .circle:after {
-          background-color: transparent; }
 
 .circle {
   font-size: 8px;
@@ -61,6 +66,38 @@ a {
     height: 4px;
     border-radius: 2px;
     background-color: #982207; }
+
+@media screen and (max-width: 680px) {
+  ul.header li:not(:first-child) {
+    display: none; }
+  ul.header li.icon {
+    float: right;
+    display: inline-block; } }
+
+@media screen and (max-width: 680px) {
+  ul.header.responsive {
+    position: relative;
+    z-index: 999999; }
+    ul.header.responsive li {
+      float: none;
+      padding: 0 5%; }
+      ul.header.responsive li.icon {
+        position: absolute;
+        font-size: 40px;
+        right: 0;
+        top: 0; }
+      ul.header.responsive li:not(.header-logo) {
+        display: block;
+        font-size: 28px;
+        background-color: #e4e4e4; }
+        ul.header.responsive li:not(.header-logo) a {
+          display: block;
+          text-align: left;
+          height: 100%;
+          padding: 0;
+          line-height: 70px; }
+      ul.header.responsive li a .circle {
+        display: none; } }
 
 .landing-footer {
   text-align: center;
@@ -170,9 +207,26 @@ a {
   .image-box:nth-of-type(3n) {
     padding-left: 2px; }
   .image-box:nth-of-type(3n+2) {
-    padding: 0 1px; }
+    padding-left: 1px;
+    padding-right: 1px; }
   .image-box:nth-of-type(3n+1) {
     padding-right: 2px; }
+
+@media screen and (max-width: 680px) {
+  .image-box {
+    width: 50%;
+    vertical-align: top; }
+    .image-box:nth-of-type(3n) {
+      padding-left: 0; }
+    .image-box:nth-of-type(3n+2) {
+      padding-left: 0;
+      padding-right: 0; }
+    .image-box:nth-of-type(3n+1) {
+      padding-right: 0; }
+    .image-box:nth-of-type(odd) {
+      padding-right: 1px; }
+    .image-box:nth-of-type(even) {
+      padding-left: 1px; } }
 
 #modal-contact {
   position: relative;
@@ -212,11 +266,12 @@ a {
 
 .about-wrapper {
   padding: 40px;
-  width: 1000px;
+  width: 100%;
   position: relative;
-  font-size: 20px; }
+  font-size: 20px;
+  box-sizing: border-box; }
   .about-wrapper .column {
-    width: 49%;
+    max-width: 500px;
     display: inline-block; }
 
 /* Magnific Popup CSS */

@@ -34,4 +34,8 @@ $(function () {
     autoFocusLast: false,
     mainClass: 'mfp-fade'
   })
+
+  $('.header').find('.icon, li:not(.header-logo)').on('click', function() {
+    $(this).parent().toggleClass('responsive')
+  })
 })
