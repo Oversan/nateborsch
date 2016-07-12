@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Dosis', sans-serif;
+  overflow: auto;
   background-color: #e4e4e4; }
 
 a {
