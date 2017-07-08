@@ -126,7 +126,7 @@ ul.header {
     width: 20px;
     height: 20px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     margin: 0 5px; }
     .page-footer .footer-icon svg#icon {
       fill: #000; }
