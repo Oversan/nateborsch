@@ -592,6 +592,10 @@ img.mfp-img {
   padding-right: 36px;
   font-size: 12px;
   font-weight: 200; }
+  .mfp-title .download-link {
+    color: #ffd400;
+    font-size: 14px;
+  }
 
 .mfp-image-holder .mfp-content {
   max-width: 100%; }
