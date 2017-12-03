@@ -112,9 +112,9 @@ ul.header {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px; }
-    .landing-footer .footer-icon svg#icon {
+    .landing-footer .footer-icon svg.icon-svg {
       fill: #b6b5b3; }
-    .landing-footer .footer-icon:hover svg#icon {
+    .landing-footer .footer-icon:hover svg.icon-svg {
       fill: #fff; }
 
 .page-footer {
@@ -128,9 +128,9 @@ ul.header {
     display: inline-block;
     vertical-align: middle;
     margin: 0 5px; }
-    .page-footer .footer-icon svg#icon {
+    .page-footer .footer-icon svg.icon-svg {
       fill: #000; }
-    .page-footer .footer-icon:hover svg#icon {
+    .page-footer .footer-icon:hover svg.icon-svg {
       fill: #757575; }
 
 .landing-wrapper {
