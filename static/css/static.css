@@ -5,20 +5,20 @@ html, body {
   margin: 0;
   font-family: 'Dosis', sans-serif;
   overflow: auto;
-  background-color: #e4e4e4; }
+  background-color: #1b1b1b; }
 
 a {
   text-decoration: none; }
 
 ul.header {
   height: 75px;
-  border-bottom: 1px dashed #982207;
+  border-bottom: 1px dashed #bb2300;
   list-style: none;
   margin: 0;
   padding: 0; }
   ul.header li {
     float: left;
-    color: #982207;
+    color: #e6e6e6;
     font-size: 12px;
     text-transform: uppercase;
     padding: 0 5%;
@@ -32,7 +32,7 @@ ul.header {
       ul.header li:hover .circle:after {
         background-color: transparent; }
     ul.header li.active {
-      color: #b6b5b3; }
+      color: #bb2300; }
       ul.header li.active .circle:after {
         background-color: transparent; }
   ul.header .icon {
@@ -49,11 +49,11 @@ ul.header {
     ul.header .header-logo .top {
       font-size: 48px;
       font-weight: 500;
-      color: #982207;
+      color: #bb2300;
       margin-bottom: -8px; }
     ul.header .header-logo .bottom {
       font-size: 14px;
-      color: #b6b5b3; }
+      color: #e6e6e6; }
     ul.header .header-logo:hover .top {
       color: #b6b5b3; }
 
@@ -129,9 +129,9 @@ ul.header {
     vertical-align: middle;
     margin: 0 5px; }
     .page-footer .footer-icon svg.icon-svg {
-      fill: #000; }
+      fill: #bfbfbf; }
     .page-footer .footer-icon:hover svg.icon-svg {
-      fill: #757575; }
+      fill: #bfbfbf; }
 
 .landing-wrapper {
   width: 100%;
@@ -290,6 +290,7 @@ ul.header {
 
 .about-wrapper {
   padding: 40px;
+  color: #bfbfbf;
   width: 100%;
   position: relative;
   font-size: 20px;
