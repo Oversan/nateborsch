@@ -90,7 +90,7 @@ ul.header {
       ul.header.responsive li:not(.header-logo) {
         display: block;
         font-size: 28px;
-        background-color: #e4e4e4; }
+        background-color: #1b1b1b; }
         ul.header.responsive li:not(.header-logo) a {
           display: block;
           text-align: left;
