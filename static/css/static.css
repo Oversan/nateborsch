@@ -165,6 +165,7 @@ ul.header {
   left: 0;
   width: 0;
   height: 0;
+  opacity: 0.7;
   border-bottom: 12vw solid #ffd400;
   border-right: 12vw solid transparent;
   z-index: 1; }
@@ -177,19 +178,13 @@ ul.header {
     font-weight: bold;
     transform: rotate(45deg) translateY(3.5vw) translateX(4.5vw); }
 
+.overlap-free:hover {
+  opacity: 1;
+}
+
 .image-box {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 10+, Firefox on Android */
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: .2s ease-in-out;
-  -moz-filter: grayscale(100%);
-  -moz-transition: .2s ease-in-out;
-  -ms-filter: grayscale(100%);
-  -ms-transition: .2s ease-in-out;
-  filter: grayscale(100%);
+  opacity: 0.5;
   transition: .2s ease-in-out;
-  z-index: 0;
-  filter: gray;
   /* IE 6-9 */ }
   .image-box .magnetic-gallery a:not(:first-child) {
     display: none; }
@@ -218,13 +213,7 @@ ul.header {
     text-align: right;
     transition: visibility 0s, opacity 0.3s linear; }
   .image-box:hover {
-    -webkit-filter: none;
-    -webkit-transition: .2s ease-in-out;
-    -moz-filter: none;
-    -moz-transition: .2s ease-in-out;
-    -ms-filter: none;
-    -ms-transition: .2s ease-in-out;
-    filter: none;
+    opacity: 1;
     transition: .2s ease-in-out; }
     .image-box:hover .image-sig {
       visibility: visible;
