@@ -669,3 +669,8 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
+
+@media all and (max-width: 640px) {
+  .landing-wrapper {
+    background-image: url("../img/static/vis/cuda_sequel_exterior_2018/cuda_sequel_exterior_2018_1_big.jpg"); }
+}
