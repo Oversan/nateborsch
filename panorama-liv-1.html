@@ -15,10 +15,18 @@
   <body>
     <div id="panorama"></div>
     <script>
-    pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "static/img/static/panoramas/Pano_liv_1/Pano_liv_1.jpg",
-        "autoLoad": true
+      pannellum.viewer('panorama', {
+        "hfov": 100.0,
+        "autoLoad": true,
+        "type": "multires",
+        "multiRes": {
+            "path": "static/img/static/panoramas/Pano_liv_1/%l/%s%y_%x",
+            "fallbackPath": "static/img/static/panoramas/Pano_liv_1/fallback/%s",
+            "extension": "jpg",
+            "tileResolution": 512,
+            "maxLevel": 4,
+            "cubeResolution": 3496
+        }
     });
     </script>
   </body>
