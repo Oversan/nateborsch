@@ -16,19 +16,127 @@
     <div id="panorama"></div>
     <script>
       pannellum.viewer('panorama', {
-        "autoLoad": true,
-        "hfov": 100.0,
-        "type": "multires",
-        "multiRes": {
-            "path": "static/img/static/panoramas/Livingroom/%l/%s%y_%x",
-            "fallbackPath": "static/img/static/panoramas/Livingroom/fallback/%s",
-            "extension": "jpg",
-            "tileResolution": 512,
-            "maxLevel": 4,
-            "cubeResolution": 3304
+        "default": {
+          "firstScene": "livingroom",
+          "author": "Nate Borsch",
+          "sceneFadeDuration": 1000
         },
-        "title": "Living Room",
-        "author": "Nate Borsch"
+
+        "scenes": {
+          "livingroom": {
+            "title": "Living Room",
+            "autoLoad": true,
+            "hfov": 100.0,
+            "type": "multires",
+            "multiRes": {
+              "path": "static/img/static/panoramas/Livingroom/%l/%s%y_%x",
+              "fallbackPath": "static/img/static/panoramas/Livingroom/fallback/%s",
+              "extension": "jpg",
+              "tileResolution": 512,
+              "maxLevel": 4,
+              "cubeResolution": 3304
+            },
+            "hotSpots": [
+              {
+                "pitch": -8,
+                "yaw": 145,
+                "type": "scene",
+                "text": "Cabinet",
+                "sceneId": "cabinet"
+              }
+            ]
+          },
+          "cabinet": {
+            "title": "Cabinet",
+            "autoLoad": true,
+            "hfov": 100.0,
+            "type": "multires",
+            "multiRes": {
+              "path": "static/img/static/panoramas/Cabinet/%l/%s%y_%x",
+              "fallbackPath": "static/img/static/panoramas/Cabinet/fallback/%s",
+              "extension": "jpg",
+              "tileResolution": 512,
+              "maxLevel": 4,
+              "cubeResolution": 3176
+            },
+            "hotSpots": [
+              {
+                "pitch": -20,
+                "yaw": 30,
+                "type": "scene",
+                "text": "Living Room",
+                "sceneId": "livingroom"
+              },
+              {
+                "pitch": -10,
+                "yaw": 190,
+                "type": "scene",
+                "text": "Bed Room",
+                "sceneId": "bedroom"
+              }
+            ]
+          },
+          "bedroom": {
+            "title": "Bed Room",
+            "autoLoad": true,
+            "hfov": 100.0,
+            "type": "multires",
+            "multiRes": {
+                "path": "static/img/static/panoramas/Bedroom/%l/%s%y_%x",
+                "fallbackPath": "static/img/static/panoramas/Bedroom/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2544
+            },
+            "hotSpots": [
+              {
+                "pitch": 0,
+                "yaw": -20,
+                "type": "scene",
+                "text": "Living Room",
+                "sceneId": "livingroom"
+              },
+              {
+                "pitch": -20,
+                "yaw": -15,
+                "type": "scene",
+                "text": "Cabinet",
+                "sceneId": "cabinet"
+              },
+              {
+                "pitch": -5,
+                "yaw": 140,
+                "type": "scene",
+                "text": "Bath Room",
+                "sceneId": "bathroom"
+              }
+            ]
+          },
+          "bathroom": {
+            "title": "Bath Room",
+            "autoLoad": true,
+            "hfov": 100.0,
+            "type": "multires",
+            "multiRes": {
+                "path": "static/img/static/panoramas/Bathroom/%l/%s%y_%x",
+                "fallbackPath": "static/img/static/panoramas/Bathroom/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 3176
+            },
+            "hotSpots": [
+              {
+                "pitch": 0,
+                "yaw": -35,
+                "type": "scene",
+                "text": "Bed Room",
+                "sceneId": "bedroom"
+              },
+            ]
+          }
+        }
       });
     </script>
   </body>
