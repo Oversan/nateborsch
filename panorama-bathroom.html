@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Nate Borsch Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800,300,200">
+    <link rel="stylesheet" href="static/css/static.css">
+    <script type="text/javascript" src="static/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="static/js/bundle.js"></script>
+    <link rel="stylesheet" href="static/css/pannellum.css"/>
+    <script type="text/javascript" src="static/js/pannellum.js"></script>
+  </head>
+  <body>
+    <div id="panorama"></div>
+    <script>
+      pannellum.viewer('panorama', {
+        "hfov": 100.0,
+        "type": "multires",
+        "multiRes": {
+            "path": "static/img/static/panoramas/Bathroom/%l/%s%y_%x",
+            "fallbackPath": "static/img/static/panoramas/Bathroom/fallback/%s",
+            "extension": "jpg",
+            "tileResolution": 512,
+            "maxLevel": 3,
+            "cubeResolution": 1584
+        },
+        "title": "Living Room",
+        "author": "Nate Borsch"
+      });
+    </script>
+  </body>
+</html>
