@@ -53,7 +53,8 @@ $(function () {
       },
       ...koiKoiImages.map(src => ({
         src,
-        type: 'image'
+        type: 'image',
+        title: 'Koi-koi; in'
       }))
     ],
     gallery: {
