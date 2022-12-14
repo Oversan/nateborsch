@@ -13,4 +13,4 @@ Generation:
 # Run local server for static files
 
 - `python3 -m http.server` in the root folder
-- open `http://localhost:8000/`
+- open `https://localhost:8000/`
